@@ -1,0 +1,58 @@
+import { HeritageCategory } from './types';
+
+export const HERITAGE_CATEGORIES: HeritageCategory[] = [
+  {
+    id: 'handloom-textiles',
+    name: 'Handloom & Master Weaves',
+    marathiName: 'हातमाग व वस्त्र परंपरा',
+    slug: 'handloom-textiles',
+    description: 'Centuries-old weaving lineages producing pure mulberry silks, zari brocades, and distinctive indigenous motifs.',
+    image: 'https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=1000&q=80',
+    count: 18,
+  },
+  {
+    id: 'tribal-folk-art',
+    name: 'Indigenous & Folk Painting',
+    marathiName: 'आदिवासी व लोककला',
+    slug: 'tribal-folk-art',
+    description: 'Ancestral visual languages using natural pigments on mud walls, handmade rice-paste motifs, and sacred narrative scrolls.',
+    image: 'https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1000&q=80',
+    count: 14,
+  },
+  {
+    id: 'metal-dhokra',
+    name: 'Bell Metal & Lost-Wax Casting',
+    marathiName: 'डोकरा व धातू ओतकाम',
+    slug: 'metal-dhokra',
+    description: 'Non-ferrous metal casting practiced since antiquity by forest-dwelling artisan communities using beeswax threads and clay moulds.',
+    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1000&q=80',
+    count: 11,
+  },
+  {
+    id: 'woodcraft-lacquer',
+    name: 'Wood Carving & Lacquer Craft',
+    marathiName: 'काष्ठकला व लाकडी काम',
+    slug: 'woodcraft-lacquer',
+    description: 'Hand-turned Pangara and Teak wood coated with natural tree resins, vegetable dyes, and intricate joinery.',
+    image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1000&q=80',
+    count: 9,
+  },
+  {
+    id: 'bamboo-cane',
+    name: 'Bamboo Weaving & Forest Crafts',
+    marathiName: 'बांबू व वेत हस्तकला',
+    slug: 'bamboo-cane',
+    description: 'Intricate splitting, plaiting, and structural weaving by indigenous communities preserving sustainable forest architecture.',
+    image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1000&q=80',
+    count: 12,
+  },
+  {
+    id: 'leather-copper',
+    name: 'Beaten Copper & Leather Craft',
+    marathiName: 'तांबे-पितळ व चर्मकला',
+    slug: 'leather-copper',
+    description: 'Hand-hammered matharkam copperware from ancient artisanal lanes and hand-stitched vegetable-tanned leather traditions.',
+    image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1000&q=80',
+    count: 10,
+  },
+];
