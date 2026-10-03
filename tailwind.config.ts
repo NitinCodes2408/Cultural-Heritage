@@ -9,56 +9,60 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sandstone: {
-          50: "#FAF6F0",
-          100: "#F1E8DA", // Primary Warm Ivory / Sandstone
-          200: "#E8DDCB",
-          300: "#D8C9B8", // Soft Border
-          400: "#C5B29E",
+        paper: {
+          DEFAULT: "#F7F1E8", // Main Background
+          50: "#FFFDF8",     // Surface / Cards
+          100: "#F7F1E8",    // Main Background
+          200: "#EFE4D3",    // Secondary Background
+          300: "#E2D4C2",    // Default District Map Color
+          400: "#DDD0BF",    // Border
+          500: "#BDAF9D",    // District Borders
         },
         ivory: {
-          50: "#FAF6F0",
-          100: "#F1E8DA",
-          200: "#E8DDCB",
-          300: "#D8C9B8",
-          400: "#C5B29E",
+          DEFAULT: "#F7F1E8",
+          50: "#FFFDF8",
+          100: "#F7F1E8",
+          200: "#EFE4D3",
+          300: "#DDD0BF",
+          400: "#BDAF9D",
         },
         charcoal: {
-          950: "#11100D",
-          900: "#171512", // Primary Dark: Deep Charcoal
-          850: "#1F1C18",
-          800: "#29231F", // Secondary Dark: Warm Brown-Charcoal
-          700: "#3D352F",
-          600: "#544941",
-          500: "#75685D", // Muted Text
+          DEFAULT: "#302A25", // Primary Text
+          950: "#181512",
+          900: "#221D18",
+          850: "#29231E",
+          800: "#302A25",     // Soft Charcoal Primary Text
+          700: "#4D433B",
+          600: "#5E534A",
+          500: "#756A5F",     // Secondary Text
+          400: "#8E8276",
         },
         terracotta: {
-          300: "#C7735B",
-          400: "#B66046",
-          500: "#A6533B", // Primary Accent: Muted Terracotta
-          600: "#8E432E",
-          700: "#733422",
+          DEFAULT: "#B86B52", // Primary Accent
+          300: "#D7A98C",     // Light Accent
+          400: "#C4775F",
+          500: "#B86B52",     // Primary Accent
+          600: "#A85E47",     // Selected District Accent
+          700: "#914B36",
         },
         brass: {
-          300: "#CBB07E",
-          400: "#BE9B63",
-          500: "#B08A52", // Secondary Accent: Antique Brass / Muted Gold
-          600: "#97723E",
-          700: "#7B5B2E",
+          DEFAULT: "#B99A68", // Heritage Accent
+          300: "#CEB58C",
+          400: "#C3A77A",
+          500: "#B99A68",     // Heritage Accent
+          600: "#A38453",
+          700: "#8C6F40",
         },
-        antiqueGold: {
-          300: "#CBB07E",
-          400: "#BE9B63",
-          500: "#B08A52",
-          600: "#97723E",
-          700: "#7B5B2E",
+        borderSand: {
+          DEFAULT: "#DDD0BF",
+          subtle: "rgba(221, 208, 191, 0.6)",
         },
-        earth: {
-          400: "#8B7A6C",
-          500: "#75685D",
-          600: "#5C5046",
-          700: "#443930",
-        },
+        mapDistrict: {
+          DEFAULT: "#E2D4C2",
+          border: "#BDAF9D",
+          hover: "#B86B52",
+          selected: "#A85E47",
+        }
       },
       fontFamily: {
         serif: ["var(--font-cormorant)", "Georgia", "serif"],
@@ -67,17 +71,16 @@ const config: Config = {
         marathi: ["var(--font-noto-marathi)", "sans-serif"],
       },
       backgroundImage: {
-        'grain': "radial-gradient(rgba(216, 201, 184, 0.06) 1px, transparent 0)",
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'subtle-glow': 'radial-gradient(circle at 50% 50%, rgba(176, 138, 82, 0.08) 0%, transparent 70%)',
+        'grain': "radial-gradient(rgba(48, 42, 37, 0.04) 1px, transparent 0)",
+        'subtle-glow': 'radial-gradient(circle at 50% 50%, rgba(185, 154, 104, 0.08) 0%, transparent 70%)',
       },
       letterSpacing: {
         'widest-plus': '0.25em',
         'heritage': '0.35em',
       },
       boxShadow: {
-        'editorial': '0 20px 40px -15px rgba(23, 21, 18, 0.6)',
-        'subtle': '0 4px 20px -2px rgba(23, 21, 18, 0.3)',
+        'soft-paper': '0 4px 20px -2px rgba(48, 42, 37, 0.06), 0 2px 6px -1px rgba(48, 42, 37, 0.04)',
+        'editorial-light': '0 16px 36px -12px rgba(48, 42, 37, 0.08), 0 4px 12px -2px rgba(48, 42, 37, 0.04)',
       },
       keyframes: {
         'fade-in': {
@@ -86,17 +89,12 @@ const config: Config = {
         },
         'slow-zoom': {
           '0%': { transform: 'scale(1)' },
-          '100%': { transform: 'scale(1.05)' },
+          '100%': { transform: 'scale(1.04)' },
         },
-        'pulse-subtle': {
-          '0%, 100%': { opacity: '0.4' },
-          '50%': { opacity: '0.8' },
-        }
       },
       animation: {
         'fade-in': 'fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
-        'slow-zoom': 'slow-zoom 20s ease-in-out infinite alternate',
-        'pulse-subtle': 'pulse-subtle 4s ease-in-out infinite',
+        'slow-zoom': 'slow-zoom 25s ease-in-out infinite alternate',
       }
     },
   },
